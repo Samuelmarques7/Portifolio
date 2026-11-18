@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Marques | Engenharia de Software</title>
+  <meta name="description" content="Portfólio de Samuel Marques, estudante de Engenharia de Software no Inatel, com projetos em desenvolvimento web, back-end, dados e automação.">
+  <meta property="og:title" content="Samuel Marques | Engenharia de Software">
+  <meta property="og:description" content="Estudante de Engenharia de Software no Inatel.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%232563eb'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>SM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="progresso" aria-hidden="true"></div>
+  <div class="brilho-cursor" aria-hidden="true"></div>
+
+  <header class="topo">
+    <nav class="container">
+      <a class="marca" href="#inicio"><span class="logo">SM</span> Samuel Marques</a>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#qualificacoes">Qualificações</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#contato" class="nav-cta">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="saudacao">Olá, eu sou</p>
+          <h1>Samuel Marques</h1>
+          <p class="digitando" aria-label="Engenharia de Software, desenvolvimento web, back-end, dados e automação">
+            <span class="prompt">&gt;</span> <span id="digitado">Engenharia de Software</span><span class="cursor" aria-hidden="true"></span>
+          </p>
+          <p class="subtitulo">Estudante de <strong>Engenharia de Software</strong> no Inatel. Gosto de <span class="grad">transformar ideias em software</span> que resolve problemas reais.</p>
+          <div class="botoes">
+            <a class="botao magnetico" href="#projetos">Ver projetos</a>
+            <a class="botao secundario magnetico" href="https://github.com/Samuelmarques7" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="botao secundario magnetico" href="#contato">Entrar em contato</a>
+          </div>
+          <ul class="fatos">
+            <li><span>Curso</span>Eng. de Software, 7º período</li>
+            <li><span>Instituição</span>Inatel</li>
+            <li><span>Local</span>Santa Rita do Sapucaí, MG</li>
+            <li><span>Formatura</span>2028/1 (previsão)</li>
+          </ul>
+        </div>
+        <div class="globo-area" aria-hidden="true">
+          <canvas id="globo"></canvas>
+          <div class="orbita orbita-1"><span>Python</span></div>
+          <div class="orbita orbita-2"><span>JavaScript</span></div>
+          <div class="orbita orbita-3"><span>Java</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="container secao">
+      <p class="secao-rotulo">01 · Sobre</p>
+      <h2>Sobre mim</h2>
+      <div class="sobre-texto">
+        <p>Sou estudante do 7º período de Engenharia de Software no Inatel e gosto de transformar ideias em software que funciona e resolve problemas reais.</p>
+        <p>Ao longo do curso, desenvolvi projetos em várias frentes: aplicações web, back-end, banco de dados, testes automatizados, integração contínua, análise de dados e automação. Já trabalhei com linguagens e ferramentas como Java, Python, JavaScript, Node.js, React e PostgreSQL, e gosto de aprender o que cada projeto pede.</p>
+        <p>Também acredito que a tecnologia vai além do código. Minha trajetória inclui empreendedorismo, monitoria, educação voluntária e projetos em equipe, experiências que fortaleceram minha comunicação, minha autonomia e a forma como resolvo problemas.</p>
+        <p>Hoje, meu objetivo é continuar crescendo como engenheiro de software, escrevendo código de qualidade e construindo soluções úteis.</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="container secao">
+      <p class="secao-rotulo">02 · Projetos</p>
+      <h2>Projetos</h2>
+
+      <h3>Em andamento <span class="status andamento">em desenvolvimento</span></h3>
+      <div class="grade">
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">🤖</span></div>
+          <h4>Curadoria automática de artigos de IA</h4>
+          <p>Fluxo com n8n e um LLM que resume artigos do arXiv em português e envia o resumo por Telegram, com avaliação dos resumos.</p>
+          <ul class="tags"><li>n8n</li><li>API de LLM</li><li>Python</li></ul>
+          <p class="cartao-link"><span class="link-em-breve">Repositório em breve</span></p>
+        </article>
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">☕</span></div>
+          <h4>Previsão de produtividade do café</h4>
+          <p>Modelo de séries temporais com dados climáticos do INMET e dados de produção do IBGE para Minas Gerais, com publicação prevista no Hugging Face.</p>
+          <ul class="tags"><li>Python</li><li>pandas</li></ul>
+          <p class="cartao-link"><span class="link-em-breve">Repositório em breve</span></p>
+        </article>
+      </div>
+
+      <h3>Projetos concluídos <span class="status concluido">concluídos</span></h3>
+      <div class="grade">
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">🛠️</span><span class="selo">Em equipe · C14</span></div>
+          <h4>Prestador de Serviços</h4>
+          <p>Plataforma em Java 21 e PostgreSQL para contratantes e prestadores, com pipeline de CI/CD no Jenkins, testes automatizados e deploy no Render.</p>
+          <ul class="tags"><li>Java 21</li><li>PostgreSQL</li><li>JUnit</li><li>Mockito</li><li>Jenkins</li><li>Docker</li><li>Render</li></ul>
+          <p class="cartao-link"><a href="https://github.com/C14-Inatel-2026-2/Prestador_de_Servico" target="_blank" rel="noopener">Ver no GitHub ↗</a></p>
+        </article>
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">🔁</span><span class="selo">Em equipe</span></div>
+          <h4>LendLoop</h4>
+          <p>Plataforma de aluguel entre pessoas, com cadastro, busca com filtros, reservas, chat e pagamentos.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>Playwright</li><li>Mercado Pago</li></ul>
+          <p class="cartao-link"><a href="https://github.com/Samuelmarques7/LendLoop" target="_blank" rel="noopener">Ver no GitHub ↗</a></p>
+        </article>
+      </div>
+
+      <h3>Disciplinas com projetos práticos</h3>
+      <div class="grade">
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">📊</span></div>
+          <h4>C11: Análise de dados com Python</h4>
+          <p>Exercícios práticos com pandas, numpy, matplotlib, seaborn e statsmodels, incluindo um notebook em grupo sobre análise de vagas de IA.</p>
+          <ul class="tags"><li>Python</li><li>pandas</li><li>numpy</li><li>matplotlib</li><li>seaborn</li><li>statsmodels</li></ul>
+          <p class="cartao-link"><a href="https://github.com/Samuelmarques7/C11B" target="_blank" rel="noopener">Ver no GitHub ↗</a></p>
+        </article>
+        <article class="cartao">
+          <div class="cartao-topo"><span class="icone">♟️</span></div>
+          <h4>Sistema de Jogo de Xadrez</h4>
+          <p>Aplicação dos conhecimentos do curso Java Programação Orientada a Objetos.</p>
+          <ul class="tags"><li>Java</li><li>POO</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="qualificacoes" class="container secao">
+      <p class="secao-rotulo">03 · Qualificações</p>
+      <h2>Qualificações</h2>
+      <div class="grade qualificacoes">
+        <div>
+          <h4>Linguagens</h4>
+          <ul class="tags"><li>Python</li><li>Java</li><li>C++</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li></ul>
+        </div>
+        <div>
+          <h4>Back-end e dados</h4>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>PostgreSQL</li><li>Maven</li><li>pandas</li><li>numpy</li><li>matplotlib</li><li>seaborn</li><li>statsmodels</li></ul>
+        </div>
+        <div>
+          <h4>Front-end</h4>
+          <ul class="tags"><li>React</li><li>Vite</li><li>Tailwind CSS</li></ul>
+        </div>
+        <div>
+          <h4>Testes e qualidade</h4>
+          <ul class="tags"><li>JUnit 5</li><li>Mockito</li><li>Testes de unidade</li><li>Testes de integração com banco</li><li>Playwright</li><li>JaCoCo</li></ul>
+        </div>
+        <div>
+          <h4>DevOps e ferramentas</h4>
+          <ul class="tags"><li>Git e GitHub</li><li>Conventional Commits</li><li>Pull requests</li><li>Jenkins</li><li>Render</li><li>Docker</li><li>LaTeX</li></ul>
+        </div>
+        <div>
+          <h4>Modelagem e documentação</h4>
+          <p>UML (casos de uso e classes), requisitos funcionais e não funcionais, documentação técnica em Markdown</p>
+        </div>
+        <div>
+          <h4>Competências organizacionais</h4>
+          <p>Planejamento e logística em eventos de tecnologia (staff do IRONCup 2024), pacote Office</p>
+        </div>
+        <div>
+          <h4>Competências interpessoais</h4>
+          <p>Comunicação, didática, orientação de alunos, trabalho em equipe e liderança de atividades voluntárias</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="container secao">
+      <p class="secao-rotulo">04 · Trajetória</p>
+      <h2>Formação e experiência</h2>
+      <div class="duas-colunas">
+        <div>
+          <h3>Formação</h3>
+          <ul class="linha-do-tempo">
+            <li>
+              <span class="data">2023/2 – 2028/1 (previsão)</span>
+              <strong>Engenharia de Software</strong>
+              <p>Instituto Nacional de Telecomunicações (Inatel)</p>
+            </li>
+            <li>
+              <span class="data">2017 – 2019</span>
+              <strong>Ensino Médio</strong>
+              <p>Colégio Tiradentes da PMMG</p>
+            </li>
+          </ul>
+
+          <h3>Cursos e idiomas</h3>
+          <ul class="linha-do-tempo">
+            <li>
+              <span class="data">2026</span>
+              <strong>Java Completo: Programação Orientada a Objetos</strong>
+              <p>Nélio Alves, Udemy</p>
+            </li>
+            <li>
+              <span class="data">2026</span>
+              <strong>Full English</strong>
+            </li>
+            <li>
+              <strong>Idiomas</strong>
+              <p>Inglês intermediário</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Experiência</h3>
+          <ul class="linha-do-tempo">
+            <li>
+              <span class="data">2º sem. 2025</span>
+              <strong>Agente Empreendedor, Núcleo de Empreendedorismo (NEmp)</strong>
+              <p class="local">Inatel</p>
+              <p>Reconhecimento pela participação em atividades de empreendedorismo, inovação e resolução de problemas.</p>
+            </li>
+            <li>
+              <span class="data">1º sem. 2024 – 2º sem. 2025</span>
+              <strong>Educador Voluntário, Programa Inatel Cas@Viva</strong>
+              <p class="local">Inatel</p>
+              <p>Atividades práticas de empreendedorismo, eletrônica e desenvolvimento de jogos para estudantes do ensino fundamental e médio.</p>
+            </li>
+            <li>
+              <span class="data">2º sem. 2024 – 1º sem. 2025</span>
+              <strong>Monitor Acadêmico, Desenho Técnico</strong>
+              <p class="local">Inatel</p>
+              <p>Suporte aos alunos na resolução de exercícios, interpretação de normas e acompanhamento das atividades práticas.</p>
+            </li>
+            <li>
+              <span class="data">2024</span>
+              <strong>Staff Organizacional, IRONCup 2024</strong>
+              <p>Suporte técnico e operacional em uma das principais competições de robótica do país.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="container secao">
+      <div class="contato-caixa">
+        <p class="secao-rotulo">05 · Contato</p>
+        <h2>Vamos conversar?</h2>
+        <p>Quer trocar uma ideia sobre um projeto ou oportunidade? Respondo por e-mail ou LinkedIn.</p>
+        <ul class="contatos">
+          <li><a class="botao" href="mailto:samuel.silva@ges.inatel.br">✉ samuel.silva@ges.inatel.br</a></li>
+          <li><a class="botao secundario" href="https://www.linkedin.com/in/samuel-marques-2bb64033a/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a class="botao secundario" href="https://github.com/Samuelmarques7" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Samuel Marques · Santa Rita do Sapucaí, MG</p>
+  </footer>
+
+</body>
+</html>
